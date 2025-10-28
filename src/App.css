@@ -1,0 +1,171 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  box-sizing: border-box;
+}
+
+.game-container {
+  text-align: center;
+  background-color: #fff;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  width: 400px;
+  max-width: 100%;
+}
+
+h1 {
+  margin: 10px 0;
+  font-size: 26px;
+}
+
+p {
+  margin: 8px 0;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  gap: 15px;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.card {
+  width: 100px;
+  height: 100px;
+  background-color: #3498db;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  transform: scale(1);
+  transition: all 0.3s ease;
+}
+
+.card.flipped {
+  background-color: #2ecc71;
+  transform: scale(1.1);
+}
+
+.card.matched {
+  background-color: #f39c12;
+  pointer-events: none;
+}
+
+#score,
+#timer {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+button {
+  font-family: "Poppins", sans-serif;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #c0392b;
+}
+
+.timer-bar {
+  height: 5px;
+  width: 100%;
+  background-color: #e74c3c;
+  margin-top: 10px;
+}
+
+.timer-bar span {
+  display: block;
+  height: 100%;
+  background-color: #2ecc71;
+  transition: width 1s linear;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+  max-width: 320px;
+  width: 90%;
+  animation: pop 0.3s ease-out;
+}
+
+.modal h2 {
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #333;
+}
+
+.modal button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.modal button:hover {
+  background-color: #2e86c1;
+}
+
+@keyframes pop {
+  from {
+    transform: scale(0.8);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .card-container {
+    grid-template-columns: repeat(3, 80px);
+    gap: 10px;
+  }
+
+  .card {
+    width: 80px;
+    height: 80px;
+    font-size: 20px;
+  }
+
+  .game-container {
+    width: 90%;
+  }
+}
