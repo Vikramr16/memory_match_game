@@ -4,9 +4,7 @@ A fun **Memory Match Game** built with **React** where players try to match emoj
 
 ## Demo
 
-![Demo Screenshot](<img width="1353" height="640" alt="image" src="https://github.com/user-attachments/assets/63f308d9-49a2-4830-b5a3-08bc4f2a1b36" />
-)  
-*Replace `screenshot.png` with an actual screenshot of your game.*
+![Demo Screenshot](<img width="1353" height="640" alt="image" src="https://github.com/user-attachments/assets/63f308d9-49a2-4830-b5a3-08bc4f2a1b36" />)
 
 ## Features
 
