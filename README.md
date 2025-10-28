@@ -2,9 +2,8 @@
 
 A fun **Memory Match Game** built with **React** where players try to match emoji pairs before the timer runs out. 
 
-## Demo
+## Demo Screenshot
 
-![Demo Screenshot]
 <img width="1353" height="640" alt="image" src="https://github.com/user-attachments/assets/63f308d9-49a2-4830-b5a3-08bc4f2a1b36" />
 
 ## Features
@@ -27,6 +26,7 @@ A fun **Memory Match Game** built with **React** where players try to match emoj
 1. Clone the repository:
 
 ```bash
+# Clone the repository
 git clone https://github.com/Vikramr16/memory_match_game.git
 cd memory-match-challenge
 
