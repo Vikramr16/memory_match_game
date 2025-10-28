@@ -29,3 +29,9 @@ A fun **Memory Match Game** built with **React** where players try to match emoj
 ```bash
 git clone https://github.com/Vikramr16/memory_match_game.git
 cd memory-match-challenge
+
+# Install dependencies
+npm install
+
+# Start the development server
+npm start
